@@ -3,54 +3,38 @@ body{
     width: 100%;
     font-size: 300%;
 }
+*{box-sizing: border-box;}
 #logo{
     width: 60%;
     margin-left: 20%;
 }
 #contact-form{
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+    align-items: center;
     border-radius: 40px;
     width: 90%;
     padding: 2.5%;
-    padding-bottom: 15%;
+    margin: 5%;
+    padding-bottom: 5%;
     border: 2px solid #aaa;
-    margin: 2.5%;
     background-color: #bbb;
 
 }
-input{
-    width: 58%;
+#contact-form label{
+    margin: 15px 10px 15px 0;
+}
+#contact-form input{
     font-size: 100%;
-    margin-top: 8%;
-    border: 2px solid black;
+    width: 100%;
+    margin: 15px 10px 15px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #fff;
 }
-#name{
-    margin-left: 26.6%;
-}
-#surname{
-    margin-left: 20%;
-}
-#identity{
-    margin-left: 16%;
-}
-#card{
-    margin-left: 9.9%;
-}
-#pin{
-    margin-left: 20.5%;
-}
-#username{
-    margin-left: 6.9%;
-}
-#password{
-    margin-left: 8.1%;
-}
-#email{
-    margin-left: 5.9%;
-}
-#paydate{
-    margin-left: 19.8%;
-}
-#submit{
+
+input[type='submit']{
+    color: black;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-size: 100%;
@@ -125,15 +109,15 @@ input{
         color: orangered;
         background-color: orangered;
         width: 20%;
-        left: 30%;
-        top:10%;
+        left: 80%;
+        /* top:10%; */
     }
     75%{
         color: orange;
         background-color: orange;
         width: 20%;
-        left: 30%;
-        top: 35%;
+        left: 80%;
+        /* top: 35%; */
     }
     100%{
         color: red;
